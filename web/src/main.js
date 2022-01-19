@@ -4,41 +4,16 @@ import router from 'router/index.js'
 import store from './store/index.js'
 
 // element-ui
-import {
-  Icon,
-  Table,
-  TableColumn,
-  Form,
-  FormItem,
-  RadioGroup,
-  Radio,
-  Input,
-  Checkbox,
-  MessageBox,
-  Pagination,
-  Dialog,
-  Scrollbar
-} from 'element-ui'
-Vue.use(Icon)
-Vue.use(Table)
-Vue.use(TableColumn)
-Vue.use(Form)
-Vue.use(FormItem)
-Vue.use(Radio)
-Vue.use(RadioGroup)
-Vue.use(Input)
-Vue.use(Checkbox)
-Vue.use(Pagination)
-Vue.use(Dialog)
-Vue.use(Scrollbar)
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI)
 
-Vue.prototype.$msgbox = MessageBox;
-Vue.prototype.$alert = MessageBox.alert;
-Vue.prototype.$confirm = MessageBox.confirm;
+// import base css
+import 'assets/stylus/index.styl'
+import 'assets/theme/index.styl'
 
 // register custom base component
 import Mooc from './register.js'
-import 'assets/theme/index.styl'
 Vue.use(Mooc)
 
 
